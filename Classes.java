@@ -52,7 +52,7 @@ class Duck extends Animal {
 // Child Class: Fish
 class Fish extends Animal {
 
-    // Not really using the attributes here
+    // Not really using the attributes hereeee
 
     private int sizeInFt;
     private boolean canEat;
