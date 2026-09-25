@@ -20,9 +20,9 @@ class Student extends Human {
 
     @Override
     public void talk(String sentence) {
-        System.out.println("My name is " + name );
-        System.out.println("STUDENT ID: " + student_ID );
-        System.out.println("I think " + sentence );
+        System.out.println("My name is " + name);
+        System.out.println("STUDENT ID: " + student_ID);
+        System.out.println("I think " + sentence);
         System.out.println("Perhaps, Maybe.\n");
     }
 }
@@ -39,14 +39,17 @@ class Instructor extends Human {
 
     public void teach(String lecture) {
         this.lecture = lecture;
-        System.out.println("Today we will learn about " + lecture + ". Is he or is he not the goat?");
+        System.out.println(
+            "Today we will learn about " + lecture +
+            ". Is he or is he not the goat?"
+        );
         System.out.println();
     }
 
     @Override
     public void talk(String sentence) {
-        System.out.println("My name is " + name );
-        System.out.println("FACULTY ID: " + faculty_ID );
+        System.out.println("My name is " + name);
+        System.out.println("FACULTY ID: " + faculty_ID);
         System.out.println("I think " + sentence);
         System.out.println("He's the goat.\n");
     }
@@ -54,12 +57,14 @@ class Instructor extends Human {
 
 public class OOP {
     public static void main(String[] args) {
-        Student myStudent = new Student("Bryce James", 16, 251237);
-        Instructor myInstructor = new Instructor("Bronny James", 19, 2311111, "End");
-        
+        Student myStudent =
+            new Student("Bryce James", 16, 251237);
+
+        Instructor myInstructor =
+            new Instructor("Bronny James", 19, 2311111, "End");
+
         myInstructor.teach("Lebron JAMES");
         myInstructor.talk("He's not the goat");
         myStudent.talk("Let's study hard!");
-
     }
 }
